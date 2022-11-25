@@ -1,10 +1,11 @@
 import React from "react";
 import theme from "theme";
-import { Theme, Link, Text, Section, Em, Box, Image, Strong, Button } from "@quarkly/widgets";
+import { Theme, Link, Text, Section, Em, Box, Image, Strong, Icon, Button } from "@quarkly/widgets";
 import { Helmet } from "react-helmet";
 import { GlobalQuarklyPageStyles } from "global-page-styles";
-import { RawHtml, Override, Menu } from "@quarkly/components";
+import { RawHtml, Override, StackItem, Stack } from "@quarkly/components";
 import * as Components from "components";
+import { MdArrowDownward } from "react-icons/md";
 export default (() => {
 	return <Theme theme={theme}>
 		<GlobalQuarklyPageStyles pageUrl={"index"} />
@@ -17,20 +18,8 @@ export default (() => {
 		</Helmet>
 		<Section>
 			<Text margin="0px 0 24px 0" text-align="center" font="--headline2" md-font="--headline3">
-				Zero: Rental Concept
+				Zero: Electric Motorcycle Rental Concept
 			</Text>
-			<Menu
-				display="flex"
-				justify-content="center"
-				font="--base"
-				font-weight="700"
-				md-flex-direction="column"
-				md-align-items="center"
-			>
-				<Override slot="link" text-decoration="none" color="--dark" padding="6px 12px" />
-				<Override slot="link-active" color="--primary" />
-				<Override slot="item" padding="6px" />
-			</Menu>
 		</Section>
 		<Section padding="80px 0 80px 0" sm-padding="60px 0 60px 0">
 			<Override slot="SectionContent" flex-direction="row" flex-wrap="wrap" />
@@ -395,6 +384,258 @@ export default (() => {
 							personas
 						</Link>
 						{" "}that would use the product. Here I created two personas with unique user journeys that roadmap how they would use Zero. The user journey was a fun way to get to know the product better, and how I could better solve a problem for our end user.
+					</Text>
+				</Box>
+			</Box>
+		</Section>
+		<Section padding="80px 0 80px 0" sm-padding="60px 0 60px 0">
+			<Override slot="SectionContent" flex-direction="row" md-flex-wrap="wrap" flex-wrap="wrap" />
+			<Box width="100%" margin="0px 0px 64px 0px" md-margin="0px 0px 30px 0px" min-width="auto">
+				<Text
+					margin="0px 0px 0px 0px"
+					color="--dark"
+					font="--headline2"
+					width="75%"
+					lg-width="100%"
+					lg-text-align="center"
+				>
+					Design and Low Fidelity Prototyping
+				</Text>
+			</Box>
+			<Box display="flex" width="100%" md-flex-wrap="wrap" height="600px">
+				<Box
+					width="48%"
+					display="flex"
+					flex-direction="column"
+					justify-content="space-between"
+					md-width="100%"
+					padding="0px 0px 0px 0px"
+					md-padding="0px 0px 0px 0px"
+					md-margin="0px 0px 40px 0px"
+					margin="0px 3% 0px 0px"
+				>
+					<Text margin="0px 0px 0px 0px" padding="0px 0px 3% 0px" font="30px inter">
+						<Strong
+							overflow-wrap="normal"
+							word-break="normal"
+							white-space="normal"
+							text-indent="0"
+							text-overflow="clip"
+							hyphens="manual"
+							user-select="auto"
+							pointer-events="auto"
+						>
+							Low Fidelity Prototype
+						</Strong>
+					</Text>
+					<Box
+						width="100%"
+						overflow-x="hidden"
+						overflow-y="hidden"
+						position="relative"
+						padding="40% 0px 0px 0px"
+						border-radius="24px"
+						md-margin="0px 0px 20px 0px"
+						height="50%"
+					>
+						<Image
+							src="https://uploads.quarkly.io/63800622f913c500201f21c0/images/DisplayNEW.png?v=2022-11-25T01:49:45.197Z"
+							width="100%"
+							object-fit="cover"
+							position="absolute"
+							top={0}
+							left={0}
+							bottom={0}
+							right={0}
+							max-height="100%"
+						/>
+					</Box>
+					<Text
+						margin="0px 0px 0px 0px"
+						color="--darkL2"
+						font="--base"
+						md-text-align="center"
+						padding="3% 0px 3% 0px"
+						min-height="200px"
+					>
+						The low-fidelity prototyping phase allowed me to create a basic{" "}
+						<Link href="https://github.com/JakubHojsan/DH110-22F/tree/main/A05">
+							wireflow
+						</Link>
+						{" "}and some basic frames to understand the core tasks that Zero needed to complete to be useful to the end-user. It shaped an MVP of sorts, focusing on the components necessary to continue.
+						<br />
+						<br />
+						<Link href="https://github.com/JakubHojsan/DH110-22F/edit/main/A08/draft/README.md#high-fidelity-prototype-functionalinteractive-prototype-assignment08" />
+					</Text>
+				</Box>
+				<Box
+					width="48%"
+					display="flex"
+					flex-direction="column"
+					justify-content="space-between"
+					md-width="100%"
+					padding="0px 0px 0px 0px"
+					md-padding="0px 0px 0px 0px"
+					md-margin="0px 0px 40px 0px"
+					margin="0px 3% 0px 0px"
+				>
+					<Text margin="0px 0px 0px 0px" padding="0px 0px 3% 0px" font="30px inter">
+						<Strong
+							overflow-wrap="normal"
+							word-break="normal"
+							white-space="normal"
+							text-indent="0"
+							text-overflow="clip"
+							hyphens="manual"
+							user-select="auto"
+							pointer-events="auto"
+						>
+							Interface Design
+						</Strong>
+					</Text>
+					<Box
+						width="100%"
+						overflow-x="hidden"
+						overflow-y="visible"
+						position="relative"
+						padding="40% 0px 0px 0px"
+						border-radius="24px"
+						md-margin="0px 0px 20px 0px"
+						height="50%"
+					>
+						<Image
+							src="https://uploads.quarkly.io/63800622f913c500201f21c0/images/color.png?v=2022-11-25T01:51:52.439Z"
+							width="100%"
+							object-fit="cover"
+							position="absolute"
+							top={0}
+							left={0}
+							bottom={0}
+							right={0}
+							max-height="100%"
+						/>
+					</Box>
+					<Text
+						margin="0px 0px 0px 0px"
+						color="--darkL2"
+						font="--base"
+						md-text-align="center"
+						padding="3% 0px 3% 0px"
+						min-height="200px"
+					>
+						During the interface design stage, I created{" "}
+						<Link
+							href="https://github.com/JakubHojsan/DH110-22F/tree/main/A06"
+							overflow-wrap="normal"
+							word-break="normal"
+							white-space="normal"
+							text-indent="0"
+							text-overflow="clip"
+							hyphens="manual"
+							user-select="auto"
+							pointer-events="auto"
+						>
+							design variations
+						</Link>
+						{" "}to get the best combination of elements for my mockups. The interface design was important, as we used Gestalt Theory to group elements together, but also keep them separate.
+					</Text>
+				</Box>
+			</Box>
+		</Section>
+		<Section
+			background="linear-gradient(0deg,rgba(4, 8, 12, 0.6) 0%,rgba(4, 8, 12, 0.6) 100%),--color-darkL2 url(https://images.unsplash.com/photo-1582278797072-ee6d92c01b19?ixlib=rb-4.0.3&q=80&fm=jpg&crop=entropy&cs=tinysrgb&h=2000) center/cover"
+			padding="64px 0"
+			sm-padding="40px 0"
+			color="--light"
+			font="--base"
+		>
+			<Stack>
+				<StackItem width="75%" lg-width="100%">
+					<Override slot="StackItemContent" flex-direction="column" />
+					<Text color="--lightD2" letter-spacing="1px" text-transform="uppercase" margin="0">
+						Zero emissions, Infinite Fun.
+					</Text>
+					<Text as="h1" font="--headline1" md-font="--headline2" margin="10px 0">
+						High Fidelity Prototype and Demo
+					</Text>
+				</StackItem>
+			</Stack>
+			<Box text-align="center" margin="96px 0 0 0">
+				<Text margin="8px 0" text-transform="uppercase">
+					Final product
+				</Text>
+				<Icon category="md" margin="0 auto" icon={MdArrowDownward} />
+			</Box>
+		</Section>
+		<Section padding="80px 0 80px 0" sm-padding="60px 0 60px 0">
+			<Override slot="SectionContent" flex-direction="row" md-flex-wrap="wrap" flex-wrap="wrap" />
+			<Box width="100%" margin="0px 0px 64px 0px" md-margin="0px 0px 30px 0px" min-width="auto">
+				<Text
+					margin="0px 0px 0px 0px"
+					color="--dark"
+					font="--headline2"
+					width="75%"
+					lg-width="100%"
+					lg-text-align="center"
+				>
+					High Fidelity Prototype
+				</Text>
+			</Box>
+			<Box display="flex" width="100%" md-flex-wrap="wrap" height="600px">
+				<Box
+					width="100%"
+					display="flex"
+					flex-direction="column"
+					justify-content="space-between"
+					md-width="100%"
+					padding="0px 0px 0px 0px"
+					md-padding="0px 0px 0px 0px"
+					md-margin="0px 0px 40px 0px"
+					margin="0px 3% 0px 0px"
+				>
+					<Text margin="0px 0px 50px 0px" padding="0px 0px 0px 0px" font="30px inter">
+						<Strong>
+							My favorite feature from the prototype
+						</Strong>
+					</Text>
+					<Box
+						width="100%"
+						overflow-x="hidden"
+						overflow-y="hidden"
+						position="relative"
+						padding="40% 0px 0px 0px"
+						border-radius="24px"
+						md-margin="0px 0px 20px 0px"
+						height="50%"
+					>
+						<Image
+							src="https://uploads.quarkly.io/63800622f913c500201f21c0/images/new.png?v=2022-11-25T01:59:07.416Z"
+							width="100%"
+							object-fit="cover"
+							position="absolute"
+							top={0}
+							left={0}
+							bottom={0}
+							right={0}
+							max-height="100%"
+						/>
+					</Box>
+					<Text
+						margin="0px 0px 0px 0px"
+						color="--darkL2"
+						font="--base"
+						md-text-align="center"
+						padding="3% 0px 3% 0px"
+						min-height="200px"
+					>
+						The{" "}
+						<Link href="https://www.figma.com/file/E0lVkbu4lQ9bkhfn0V9jZc/Zero?node-id=42%3A1823&t=CrtslYbsi4rHXwuF-1">
+							high-fidelity
+						</Link>
+						{" "}prototype was the most stimulating thing to work on. After polishing the design to full functionality, things can still be missing. These missing components can be found during user testing and a cognitive walkthrough with your peers. The above feature allows the user to scroll through a carousel of Zeros, view statistics, and allow them to confirm their model preference. This feature was suggested by one of my peers as part of the cognitive walkthrough.{" "}
+						<br />
+						<br />
+						Below you can demo the final iteration of the design.
 					</Text>
 				</Box>
 			</Box>
