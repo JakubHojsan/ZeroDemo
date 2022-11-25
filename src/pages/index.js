@@ -154,6 +154,7 @@ export default (() => {
 						font="--base"
 						md-text-align="center"
 						padding="3% 0px 3% 0px"
+						min-height="200px"
 					>
 						In order to begin brainstorming the project, I conducted a heuristic analysis on a few websites in the sustainable city space. While not direct competition with Zero, the goal of the assessment was to find design aspects in the space that poorly impacted message using design heuristics. It naturally led me to look at competitors like Bird, Lyft Scooters, and Turo in the space. To learn more, click{" "}
 						<Link href="https://github.com/JakubHojsan/DH110-22F/tree/main/A01" target="_self">
@@ -206,8 +207,51 @@ export default (() => {
 						font="--base"
 						md-text-align="center"
 						padding="3% 0px 3% 0px"
+						min-height="200px"
 					>
-						Curabitur lobortis id lorem id bibendum. Ut id consectetur magna. Quisque volutpat augue enim, pulvinar lobortis nibh lacinia at. Vestibulum nec erat ut mi sollicitudin porttitor id sit amet risus. Nam tempus vel odio vitae aliquam. In imperdiet eros id lacus vestibulum vestibulum. Suspendisse fermentum sem sagittis ante venenatis egestas quis vel justo. Maecenas semper suscipit nunc, sed aliquam sapien convallis eu. Nulla ut turpis in diam dapibus consequat.
+						After evaluation heuristics, I found the space I was looking at wouldn't be incredibly intellectually stimulating to iterate on, and I wanted to solve something really posing a problem to users. I took a look at more sites like{" "}
+						<Link
+							href="https://www.bird.co/"
+							overflow-wrap="normal"
+							word-break="normal"
+							white-space="normal"
+							text-indent="0"
+							text-overflow="clip"
+							hyphens="manual"
+							user-select="auto"
+							pointer-events="auto"
+						>
+							Bird
+						</Link>
+						{" "}and{" "}
+						<Link
+							href="https://www.lyft.com/scooters"
+							overflow-wrap="normal"
+							word-break="normal"
+							white-space="normal"
+							text-indent="0"
+							text-overflow="clip"
+							hyphens="manual"
+							user-select="auto"
+							pointer-events="auto"
+						>
+							Lyft
+						</Link>
+						. This allowed me to find more gaps in competitors solution spaces, which can be found here at my{" "}
+						<Link
+							href="https://github.com/JakubHojsan/DH110-22F/tree/main/A02"
+							overflow-wrap="normal"
+							word-break="normal"
+							white-space="normal"
+							text-indent="0"
+							text-overflow="clip"
+							hyphens="manual"
+							user-select="auto"
+							pointer-events="auto"
+						>
+							user testing
+						</Link>
+						. The answers found in my surveys sparked the idea for Zero, but I had to be sure.
 					</Text>
 				</Box>
 			</Box>
