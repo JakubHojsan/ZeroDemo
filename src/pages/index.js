@@ -1,6 +1,6 @@
 import React from "react";
 import theme from "theme";
-import { Theme, Link, Text, Section, Em, Box, Image, Strong, Icon, Button } from "@quarkly/widgets";
+import { Theme, Link, Text, Section, Em, Box, Image, Strong, Icon } from "@quarkly/widgets";
 import { Helmet } from "react-helmet";
 import { GlobalQuarklyPageStyles } from "global-page-styles";
 import { RawHtml, Override, StackItem, Stack } from "@quarkly/components";
@@ -649,9 +649,6 @@ export default (() => {
 			<Text as="p" font="--lead" margin="20px 0 20px 0" text-align="center">
 				The prototype was a great way to get a feel for what we could pass off to a development team or create in house.
 			</Text>
-			<Button font="--lead" margin="20px" background="#5c1cc9" href="https://www.figma.com/proto/E0lVkbu4lQ9bkhfn0V9jZc/Zero?page-id=42%3A1736&node-id=42%3A2158&viewport=207%2C435%2C0.22&scaling=scale-down&starting-point-node-id=42%3A1823">
-				Access the full demo here.
-			</Button>
 		</Section>
 		<Link
 			font={"--capture"}
