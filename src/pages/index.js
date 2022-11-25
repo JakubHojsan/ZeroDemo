@@ -1,9 +1,10 @@
 import React from "react";
 import theme from "theme";
-import { Theme, Link, Text, Section, Em, Box, Image, Strong } from "@quarkly/widgets";
+import { Theme, Link, Text, Section, Em, Box, Image, Strong, Button } from "@quarkly/widgets";
 import { Helmet } from "react-helmet";
 import { GlobalQuarklyPageStyles } from "global-page-styles";
 import { RawHtml, Override, Menu } from "@quarkly/components";
+import * as Components from "components";
 export default (() => {
 	return <Theme theme={theme}>
 		<GlobalQuarklyPageStyles pageUrl={"index"} />
@@ -108,7 +109,7 @@ export default (() => {
 					Competitive Analysis
 				</Text>
 			</Box>
-			<Box display="flex" width="100%" md-flex-wrap="wrap">
+			<Box display="flex" width="100%" md-flex-wrap="wrap" height="600px">
 				<Box
 					width="48%"
 					display="flex"
@@ -128,7 +129,7 @@ export default (() => {
 					</Text>
 					<Box
 						width="100%"
-						height="auto"
+						height="50%"
 						overflow-x="hidden"
 						overflow-y="hidden"
 						position="relative"
@@ -181,7 +182,7 @@ export default (() => {
 					</Text>
 					<Box
 						width="100%"
-						height="auto"
+						height="50%"
 						overflow-x="hidden"
 						overflow-y="hidden"
 						position="relative"
@@ -255,6 +256,161 @@ export default (() => {
 					</Text>
 				</Box>
 			</Box>
+		</Section>
+		<Section padding="80px 0 80px 0" sm-padding="60px 0 60px 0">
+			<Override slot="SectionContent" flex-direction="row" md-flex-wrap="wrap" flex-wrap="wrap" />
+			<Box width="100%" margin="0px 0px 64px 0px" md-margin="0px 0px 30px 0px" min-width="auto">
+				<Text
+					margin="0px 0px 0px 0px"
+					color="--dark"
+					font="--headline2"
+					width="75%"
+					lg-width="100%"
+					lg-text-align="center"
+				>
+					User Research and Storytelling
+				</Text>
+			</Box>
+			<Box display="flex" width="100%" md-flex-wrap="wrap" height="600px">
+				<Box
+					width="48%"
+					display="flex"
+					flex-direction="column"
+					justify-content="space-between"
+					md-width="100%"
+					padding="0px 0px 0px 0px"
+					md-padding="0px 0px 0px 0px"
+					md-margin="0px 0px 40px 0px"
+					margin="0px 3% 0px 0px"
+				>
+					<Text margin="0px 0px 0px 0px" padding="0px 0px 3% 0px" font="30px inter">
+						<Strong>
+							Contextual Inquiry
+						</Strong>
+					</Text>
+					<Box
+						width="100%"
+						height="50%"
+						overflow-x="hidden"
+						overflow-y="hidden"
+						position="relative"
+						padding="40% 0px 0px 0px"
+						border-radius="24px"
+						md-margin="0px 0px 20px 0px"
+					>
+						<Image
+							src="https://images.unsplash.com/photo-1565300480288-deb407e6ae15?ixlib=rb-4.0.3&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=2000"
+							width="100%"
+							object-fit="cover"
+							position="absolute"
+							top={0}
+							left={0}
+							bottom={0}
+							right={0}
+							max-height="100%"
+						/>
+					</Box>
+					<Text
+						margin="0px 0px 0px 0px"
+						color="--darkL2"
+						font="--base"
+						md-text-align="center"
+						padding="3% 0px 3% 0px"
+						min-height="200px"
+					>
+						I needed to do some user research through{" "}
+						<Link href="https://github.com/JakubHojsan/DH110-22F/tree/main/A03">
+							contextual inquiry
+						</Link>
+						{" "}in order to pinpoint a solution space I wanted to work in through passive observation and interviews with users. What can we do to move gas traffic to EV or other types of sustainable traffic? Bird seemed to make shorter commutes easier, but what about longer ones like my participant's trips to Culver City or Beverly Hills? Are buses and carpooling the only option, or are there other possibilities?
+					</Text>
+				</Box>
+				<Box
+					width="48%"
+					display="flex"
+					flex-direction="column"
+					justify-content="space-between"
+					md-width="100%"
+					padding="0px 0px 0px 0px"
+					md-padding="0px 0px 0px 0px"
+					md-margin="0px 0px 40px 0px"
+					margin="0px 3% 0px 0px"
+				>
+					<Text margin="0px 0px 0px 0px" padding="0px 0px 3% 0px" font="30px inter">
+						<Strong
+							overflow-wrap="normal"
+							word-break="normal"
+							white-space="normal"
+							text-indent="0"
+							text-overflow="clip"
+							hyphens="manual"
+							user-select="auto"
+							pointer-events="auto"
+						>
+							UI/UX Storytelling
+						</Strong>
+					</Text>
+					<Box
+						width="100%"
+						height="50%"
+						overflow-x="hidden"
+						overflow-y="visible"
+						position="relative"
+						padding="40% 0px 0px 0px"
+						border-radius="24px"
+						md-margin="0px 0px 20px 0px"
+					>
+						<Image
+							src="https://uploads.quarkly.io/63800622f913c500201f21c0/images/1jr.png?v=2022-11-25T01:41:34.832Z"
+							width="100%"
+							object-fit="cover"
+							position="absolute"
+							top={0}
+							left={0}
+							bottom={0}
+							right={0}
+							max-height="100%"
+						/>
+					</Box>
+					<Text
+						margin="0px 0px 0px 0px"
+						color="--darkL2"
+						font="--base"
+						md-text-align="center"
+						padding="3% 0px 3% 0px"
+						min-height="200px"
+					>
+						My favorite part about user experience is the creation of unique{" "}
+						<Link
+							href="https://github.com/JakubHojsan/DH110-22F/tree/main/A04"
+							overflow-wrap="normal"
+							word-break="normal"
+							white-space="normal"
+							text-indent="0"
+							text-overflow="clip"
+							hyphens="manual"
+							user-select="auto"
+							pointer-events="auto"
+						>
+							personas
+						</Link>
+						{" "}that would use the product. Here I created two personas with unique user journeys that roadmap how they would use Zero. The user journey was a fun way to get to know the product better, and how I could better solve a problem for our end user.
+					</Text>
+				</Box>
+			</Box>
+		</Section>
+		<Section padding="80px 0" sm-padding="40px 0">
+			<Override slot="SectionContent" align-items="center" />
+			<Text as="h2" font="--headline1" md-font="--headline2" margin="20px 0 20px 0">
+				Demo it.
+			</Text>
+			<Components.EmbedHTML />
+			<Text as="p" font="--lead" margin="20px 0 20px 0" text-align="center">
+				The prototype was a great way to get a feel for what we could pass off to a development team or create in house.
+			</Text>
+			<Button font="--lead" margin="20px" background="#5c1cc9" href="https://www.figma.com/proto/E0lVkbu4lQ9bkhfn0V9jZc/Zero?page-id=42%3A1736&node-id=42%3A2158&viewport=207%2C435%2C0.22&scaling=scale-down&starting-point-node-id=42%3A1823">
+				Access the full demo here.
+			</Button>
 		</Section>
 		<Link
 			font={"--capture"}
