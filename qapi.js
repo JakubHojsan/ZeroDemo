@@ -24,6 +24,9 @@ export default {
 	"projectType": "gatsby",
 	"site": {
 		"styles": {},
-		"seo": {}
+		"seo": {
+			"favicon_32px": "https://images.unsplash.com/photo-1582716510833-54a725cfe56a?ixlib=rb-4.0.3&q=80&fm=jpg&crop=entropy&cs=tinysrgb&h=2000",
+			"title": "Zero: Concept"
+		}
 	}
 }

@@ -9,10 +9,10 @@ export default (() => {
 		<GlobalQuarklyPageStyles pageUrl={"404"} />
 		<Helmet>
 			<title>
-				Quarkly export
+				Zero: Concept
 			</title>
 			<meta name={"description"} content={"Web site created using quarkly.io"} />
-			<link rel={"shortcut icon"} href={"https://uploads.quarkly.io/readme/cra/favicon-32x32.ico"} type={"image/x-icon"} />
+			<link rel={"shortcut icon"} href={"https://images.unsplash.com/photo-1582716510833-54a725cfe56a?ixlib=rb-4.0.3&q=80&fm=jpg&crop=entropy&cs=tinysrgb&h=2000"} type={"image/x-icon"} />
 		</Helmet>
 		<Link
 			font={"--capture"}
