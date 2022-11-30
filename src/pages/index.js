@@ -650,6 +650,7 @@ export default (() => {
 				The prototype was a great way to get a feel for what we could pass off to a development team or create in house.
 			</Text>
 		</Section>
+		<Components.QuarklycommunityKitYouTube url="https://www.youtube.com/watch?v=oavJyrOESts" />
 		<Link
 			font={"--capture"}
 			font-size={"10px"}
